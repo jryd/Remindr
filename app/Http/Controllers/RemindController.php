@@ -45,12 +45,6 @@ class RemindController extends Controller
      */
     public function create()
     {
-        /*$url = "http://freegeoip.net/json/202.21.128.254";
-        $client = new Client();
-        $response = $client->request('GET', $url);
-        $geoip = json_decode($response->getBody());
-        $timezone = $geoip->time_zone;*/
-
         //Get the user's timezone from the DB
         $timezone = Auth::user()->timezone;
 
