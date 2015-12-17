@@ -33,20 +33,14 @@ class AuthLoginEventHandler
 
         if ($member != null)
         {
-            /*$url = "http://freegeoip.net/json/" . Request::getClientIp();
+            $url = "http://freegeoip.net/json/" . Request::getClientIp();
             $client = new Client();
             $response = $client->request('GET', $url);
             $geoip = json_decode($response->getBody());
             $timezone = $geoip->time_zone;*/
 
-            /*$url = "http://freegeoip.net/json/202.21.128.254";
-            $client = new Client();
-            $response = $client->request('GET', $url);
-            $geoip = json_decode($response->getBody());
-            $timezone = $geoip->time_zone;
-
             $member->timezone = $timezone;
-            $member->save();*/
+            $member->save();
         }
     }
 }
