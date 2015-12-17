@@ -35,7 +35,7 @@ Create
 
 					<div class="form-group">
 						{!! Form::label('time', 'Time') !!}
-						{!! Form::time('time', $time->format('h:i A'), ['class' => 'form-control']) !!}
+						{!! Form::time('time', $time->format('H:i'), ['class' => 'form-control']) !!}
 					</div>
 
 					<div class="form-group">
