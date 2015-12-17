@@ -34,6 +34,7 @@ My Remindrs
 
 		        </table>
     		</div>
+    		{!! $reminders->render() !!}
 		</div>
 	</div>
 </div>

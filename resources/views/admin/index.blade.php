@@ -28,7 +28,7 @@ Scheduled Remindrs
 		                    <td>{{ $reminder->title }}</td>
 		                    <td>{{ (new Carbon\Carbon($reminder->utcReminderDate))->format('F d, Y h:ia') }}</td>
 		                    <td>
-		                        <a href="{{ url('remindr') }}/{{ $reminder->id }}" class="btn btn-info pull-left" style="margin-right: 3px;">View</a>
+		                        <a href="{{ url('admin') }}/{{ $reminder->id }}" class="btn btn-info pull-left" style="margin-right: 3px;">View</a>
 		                    </td>
 		                </tr>
 		                @endforeach
@@ -36,6 +36,7 @@ Scheduled Remindrs
 
 		        </table>
     		</div>
+    		{!! $reminders->render() !!}
 		</div>
 	</div>
 </div>

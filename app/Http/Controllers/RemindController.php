@@ -33,7 +33,7 @@ class RemindController extends Controller
      */
     public function index()
     {
-        $reminders = Reminder::where('memberid', '=', Auth::user()->id)->get();
+        $reminders = Reminder::where('memberid', '=', Auth::user()->id)->orderBy('utcReminderDate', 'desc')->paginate(15);
 
         return view('reminder.index', compact('reminders'));
     }

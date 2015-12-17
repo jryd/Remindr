@@ -38,3 +38,6 @@ Route::controllers([
 
 //Remindr Controller
 Route::resource('remindr', 'RemindController');
+
+//Admin Controller
+Route::resource('admin', 'AdminController');

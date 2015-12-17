@@ -62,7 +62,9 @@ class AdminController extends Controller
      */
     public function show($id)
     {
-        //
+        $reminder = Reminder::findOrFail($id);
+
+        return view('admin.show', compact('reminder'));
     }
 
     /**
@@ -73,7 +75,9 @@ class AdminController extends Controller
      */
     public function edit($id)
     {
-        //
+        $reminder = Reminder::findOrFail($id);
+
+        return view('admin.edit', compact('reminder'));
     }
 
     /**
@@ -96,6 +100,8 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Reminder::destroy($id);
+
+        flash()->success('Remindr was successfully deleted.');
     }
 }
