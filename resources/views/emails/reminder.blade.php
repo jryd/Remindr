@@ -4,25 +4,32 @@
     <meta charset="utf-8">
 </head>
 <body>
-<p>Hi James,</p>
+<p>Hi {{ $name }},</p>
 
 <div>
     <p>
-        I just wanted you to know that your remindr was set up correctly.
+        Remember that time you set a remindr so that you wouldn't forget something?
     </p>
     <p>
-        To confirm your details:
+        Well here it is!
+    </p>
+    <p>
+        The details of your remindr:
     </p>
     <ul>
         <li>Title: {{ $title }}</li>
-        <li>Date/Time: {{ $date->format('F d, Y h:ia') }}</li>
+        <li>Date/Time: {{ (new Carbon\Carbon($date))->format('F d, Y h:ia') }}</li>
+        @if ($description != "" || $description != null)
+		<li>Description:</li>
+		<p>{!! nl2br(e($description)) !!}</p>
+		@endif
     </ul>
     <p>
         Thanks,
         <br/>
-        Your Friendly Mail Remindr Robot
+        Your Friendly Remindr Robot
         <br>
-        <a href="http://remindr.bannister.me">http://remindr.bannister.me</a>
+        <a href="http://remindr.bannister.me">Remindr.</a>
     </p>
 </div>
 </body>
