@@ -55,6 +55,11 @@ body {
 .navbar-top-links .dropdown-menu li a {
     padding: 3px 20px;
     min-height: 0;
+    color: #337ab7;
+}
+
+.navbar-top-links .dropdown-menu li a:hover, .navbar-top-links .dropdown-menu li a:focus {
+    color: #3F93DC;
 }
 
 .navbar-top-links .dropdown-menu li a div {
@@ -387,12 +392,4 @@ table.dataTable thead .sorting:after {
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus, .navbar-top-links .dropdown-user {
     background-color: #404040;
     border-color: #000;
-}
-
-.navbar-top-links .dropdown-menu li a {
-    color: ##337ab7;
-}
-
-.navbar-top-links .dropdown-menu li a:active, .navbar-top-links .dropdown-menu li a:focus {
-    color: #3F93DC;
 }
