@@ -125,7 +125,7 @@ class RemindController extends Controller
 
         flash()->success('Your reminder was successfully set.');
 
-        return redirect('/');
+        return redirect('/remindr');
     }
 
     /**
@@ -210,7 +210,7 @@ class RemindController extends Controller
 
         flash()->success('Your reminder was successfully updated.');
 
-        return redirect('/');        
+        return redirect('/remindr');        
     }
 
     /**
