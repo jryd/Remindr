@@ -390,6 +390,6 @@ table.dataTable thead .sorting:after {
     border-color: #000;
 }
 
-.dropdown-menu > li > a:hover {
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     color: #3F93DC;
 }
