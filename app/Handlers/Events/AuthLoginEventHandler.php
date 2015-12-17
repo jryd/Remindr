@@ -37,7 +37,7 @@ class AuthLoginEventHandler
             $client = new Client();
             $response = $client->request('GET', $url);
             $geoip = json_decode($response->getBody());
-            $timezone = $geoip->time_zone;*/
+            $timezone = $geoip->time_zone;
 
             $member->timezone = $timezone;
             $member->save();
