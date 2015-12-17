@@ -58,10 +58,6 @@ body {
     color: #337ab7;
 }
 
-.navbar-top-links .dropdown-menu li a:hover, .navbar-top-links .dropdown-menu li a:focus {
-    color: #3F93DC;
-}
-
 .navbar-top-links .dropdown-menu li a div {
     white-space: normal;
 }
@@ -392,4 +388,8 @@ table.dataTable thead .sorting:after {
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus, .navbar-top-links .dropdown-user {
     background-color: #404040;
     border-color: #000;
+}
+
+.dropdown-menu > li > a:hover {
+    color: #3F93DC;
 }
