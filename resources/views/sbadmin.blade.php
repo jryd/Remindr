@@ -58,7 +58,7 @@
             <!-- /.navbar-header -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/') }}">Home</a></li>
+                    <li><a href="http://bannister.me">Home</a></li>
             </ul>
 
             <ul class="nav navbar-top-links navbar-right">
