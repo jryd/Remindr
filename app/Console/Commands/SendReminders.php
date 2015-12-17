@@ -45,9 +45,11 @@ class SendReminders extends Command
 
         foreach($reminders as $reminder)
         {
-            Mail::send('emails.test', [], function($message) use($reminder) {
+            $data = array('title' => $reminder->title, 'date' => $reminder->userReminderDate, 'description' => $reminder->description, 'name' => $reminder->user->firstname);
+            
+            Mail::send('emails.reminder', $data, function($message) use($reminder) {
                 $message->to($reminder->user->email, $reminder->user->firstname . ' ' . $reminder->user->lastname);
-                $message->subject('Friendly Remindr');
+                $message->subject('A Friendly Remindr');
             });
 
             $moveReminder = new SentReminders;
