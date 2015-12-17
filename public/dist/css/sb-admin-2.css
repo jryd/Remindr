@@ -386,5 +386,6 @@ table.dataTable thead .sorting:after {
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus, .navbar-top-links .dropdown-user {
     background-color: #404040;
-    border-color: #337ab7;
+    border-color: #000;
+    color: #3F93DC;
 }
