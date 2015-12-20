@@ -10,10 +10,10 @@ When a user logs in, it will check their location using geolocation - if none ca
 
 ## Getting Started
 
-1) Clone to your PC or server
-2) Run install command once you're in the root directory for Remindr; `composer install`
-3) Set up your `.env` file with the information to access your database (I used MySQL)
-6) Migrate and seed database tables that come with install; `php artisan migrate --seed`
-8) Now simply browse to the directory it is hosted in via your browser and voila
+1) Clone to your PC or server <br />
+2) Run install command once you're in the root directory for Remindr; `composer install` <br />
+3) Set up your `.env` file with the information to access your database (I used MySQL) <br />
+4) Migrate and seed database tables that come with install; `php artisan migrate --seed` <br />
+5) Now simply browse to the directory it is hosted in via your browser and voila <br />
 
 To log in using the seeded account, use admin@admin.com and the password admin.
