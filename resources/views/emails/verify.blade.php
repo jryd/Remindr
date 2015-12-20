@@ -11,7 +11,7 @@
         Thanks for creating an account with us at Remindr!
     </p>
     <p>
-        We just need you to confirm your email address for us, it's dead simple - just click <a href="{{ url('register/verify/' . $confirmation_code) }}">here</a>
+        We just need you to confirm your email address for us, it's dead simple - just click <a href="{{ url('register/verify/' . $confirmation_code) }}">here</a>.
     </p>
     <p>
         Thanks,
