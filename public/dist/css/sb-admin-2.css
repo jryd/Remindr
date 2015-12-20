@@ -394,3 +394,18 @@ table.dataTable thead .sorting:after {
     color: #3F93DC;
     background-color: #404040;
 }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    color: #3F93DC;
+    background-color: #404040;
+    border-color: #3F93DC;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #337ab7;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #337ab7;
+
+}
