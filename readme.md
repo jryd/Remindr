@@ -1,27 +1,19 @@
-## Laravel PHP Framework
+## Remindr
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Remindr is a simple web application built in Laravel 5.1.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+It supports registration, email verification, forgotten password, as well as the the setting, viewing, editing and deletion of remindrs.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+You simply register and you're good to go in less than a minute.
 
-## Official Documentation
+When a user logs in, it will check their location using geolocation - if none can be found, or the value stored in the database is empty or null, then it will simply use UTC. This means that when the user goes to create a remindr, it is already set to their current date and set using the current time (although this could be changed).
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+## Getting Started
 
-## Contributing
+1) Clone to your PC or server
+2) Run install command once you're in the root directory for Remindr; `composer install`
+3) Set up your `.env` file with the information to access your database (I used MySQL)
+6) Migrate and seed database tables that come with install; `php artisan migrate --seed`
+8) Now simply browse to the directory it is hosted in via your browser and voila
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+To log in using the seeded account, use admin@admin.com and the password admin.
